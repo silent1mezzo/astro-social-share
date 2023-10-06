@@ -1,0 +1,40 @@
+---
+import TwitterShareButton from './Twitter.astro';
+import FacebookShareButton from "./Facebook.astro";
+import HackerNewsShareButton from "./HackerNews.astro";
+import RedditShareButton from "./Reddit.astro";
+
+export interface Props {
+  url?: string;
+  title?: string;
+  description?: string;
+  via?: string;
+  color?: string;
+}
+
+const { url=Astro.request.url, title, description, via} = Astro.props;
+
+---
+<style>
+    div {
+        margin: 20px 0px;
+    }
+</style>
+<div class="social-share">
+    <TwitterShareButton 
+        url={url}
+        description={description}
+        via={via}
+    />
+    <FacebookShareButton 
+        url={url}
+    />
+    <HackerNewsShareButton
+        url={url}
+        title={title}
+    />
+    <RedditShareButton
+        url={url}
+        title={title}
+    />
+</div>
