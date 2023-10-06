@@ -3,7 +3,7 @@
   "description": "Social media share buttons for your Astro site",
   "version": "0.0.4",
   "type": "module",
-  "homepage": "https://github.com/silent1mezzo/astro-social-share#readme"
+  "homepage": "https://github.com/silent1mezzo/astro-social-share#readme",
   "exports": {
     ".": "./index.ts"
   },
