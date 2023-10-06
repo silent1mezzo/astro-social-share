@@ -1,8 +1,9 @@
 ---
-import TwitterShareButton from './Twitter.astro';
+import EmailShareButton from "./Email.astro";
 import FacebookShareButton from "./Facebook.astro";
 import HackerNewsShareButton from "./HackerNews.astro";
 import RedditShareButton from "./Reddit.astro";
+import TwitterShareButton from './Twitter.astro';
 
 export interface Props {
   url?: string;
@@ -36,5 +37,10 @@ const { url=Astro.request.url, title, description, via} = Astro.props;
     <RedditShareButton
         url={url}
         title={title}
+    />
+    <EmailShareButton
+        url={url}
+        title={title}
+        description={description}
     />
 </div>
