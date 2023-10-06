@@ -1,6 +1,6 @@
 # Astro Social Share
 
-> Social media share buttons and share counts for Astro.
+Social media share buttons for your Astro site
 
 ## Features
 * No depdencies, external scrips
