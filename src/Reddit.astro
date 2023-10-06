@@ -6,7 +6,8 @@ export interface Props {
 
 const { url=Astro.request.url, title } = Astro.props;
 
-let URL = `https://www.reddit.com/submit?url=${url}&title=${title}`
+const encoded_url = encodeURIComponent(url);
+let URL = `https://www.reddit.com/submit?url=${encoded_url}&title=${title}`
 
 ---
 <style>
