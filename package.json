@@ -15,5 +15,5 @@
   "scripts": {},
   "devDependencies": {
     "astro": "^3.2.3"
-  },
+  }
 }
