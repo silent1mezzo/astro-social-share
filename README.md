@@ -7,6 +7,7 @@ Social media share buttons for your Astro site
 * Share buttons for:
   * Facebook
   * Hacker News
+  * LinkedIn
   * Reddit
   * Twitter
 * Icons included
@@ -38,6 +39,7 @@ You can also import individual buttons
 import { 
   FacebookShareButton,
   HackerNewsShareButton,
+  LinkedInShareButton,
   RedditShareButton,
   TwitterShareButton
 } from "astro-social-share";
@@ -48,5 +50,6 @@ import {
 />
 <FacebookShareButton />
 <HackerNewsShareButton title={title}/>
+<FacebookShareButton />
 <RedditShareButton title={title} />
 ```
