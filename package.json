@@ -1,7 +1,7 @@
 {
   "name": "astro-social-share",
   "description": "Social media share buttons for your Astro site",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "type": "module",
   "homepage": "https://github.com/silent1mezzo/astro-social-share#readme",
   "exports": {
@@ -20,6 +20,7 @@
     "astro-component",
     "astro",
     "withastro",
+    "astro-integration",
     "social-media",
     "social-share",
     "share"

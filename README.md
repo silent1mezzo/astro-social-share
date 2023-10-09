@@ -3,7 +3,7 @@
 Social media share buttons for your Astro site
 
 ## Features
-* No depdencies, external scrips
+* No dependencies, external scrips
 * Share buttons for:
   * Facebook
   * Hacker News
