@@ -2,7 +2,7 @@
 import EmailShareButton from "./Email.astro";
 import FacebookShareButton from "./Facebook.astro";
 import HackerNewsShareButton from "./HackerNews.astro";
-import LinkedInShareBugtton from "./LinkedIn.astro";
+import LinkedInShareButton from "./LinkedIn.astro";
 import RedditShareButton from "./Reddit.astro";
 import TwitterShareButton from './Twitter.astro';
 
@@ -35,7 +35,7 @@ const { url=Astro.request.url, title, description, via} = Astro.props;
         url={url}
         title={title}
     />
-    <LinkedInShareBugtton
+    <LinkedInShareButton
         url={url}
     />
     <RedditShareButton
