@@ -1,12 +1,9 @@
 ---
-export interface Props {
-  url?: string;
-  description?: string;
-  via?: string;
-  color?: string;
-}
+import type ButtonProps  from './types';
 
-const { url=Astro.request.url, description, via, color="black"} = Astro.props;
+type Props = ButtonProps;
+
+const { url=Astro.request.url, description, via} = Astro.props;
 
 let URL = `https://twitter.com/intent/tweet?url=${url}`
 

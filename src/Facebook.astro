@@ -1,10 +1,9 @@
 ---
-export interface Props {
-  url?: string;
-  color?: string;
-}
+import type ButtonProps  from './types';
 
-const { url=Astro.request.url, color="black"} = Astro.props;
+type Props = ButtonProps;
+
+const { url=Astro.request.url} = Astro.props;
 
 let URL = `https://www.facebook.com/sharer/sharer.php?u=${url}`
 

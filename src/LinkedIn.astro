@@ -1,7 +1,7 @@
 ---
-export interface Props {
-  url?: string;
-}
+import type ButtonProps  from './types';
+
+type Props = ButtonProps;
 
 const { url=Astro.request.url} = Astro.props;
 

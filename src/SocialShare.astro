@@ -5,16 +5,15 @@ import HackerNewsShareButton from "./HackerNews.astro";
 import LinkedInShareButton from "./LinkedIn.astro";
 import RedditShareButton from "./Reddit.astro";
 import TwitterShareButton from './Twitter.astro';
+import type ButtonProps  from './types';
 
-export interface Props {
-  url?: string;
-  title?: string;
-  description?: string;
-  via?: string;
-  color?: string;
+interface Props extends ButtonProps {
+  buttons?: Object[];
 }
 
-const { url=Astro.request.url, title, description, via} = Astro.props;
+const DEFAULT_COMPONENTS = [TwitterShareButton, FacebookShareButton, HackerNewsShareButton, LinkedInShareButton, RedditShareButton, EmailShareButton];
+
+const { buttons=DEFAULT_COMPONENTS, url=Astro.request.url, title, description, via} = Astro.props;
 
 ---
 <style>
@@ -22,29 +21,6 @@ const { url=Astro.request.url, title, description, via} = Astro.props;
         margin: 20px 0px;
     }
 </style>
-<div class="social-share">
-    <TwitterShareButton 
-        url={url}
-        description={description}
-        via={via}
-    />
-    <FacebookShareButton 
-        url={url}
-    />
-    <HackerNewsShareButton
-        url={url}
-        title={title}
-    />
-    <LinkedInShareButton
-        url={url}
-    />
-    <RedditShareButton
-        url={url}
-        title={title}
-    />
-    <EmailShareButton
-        url={url}
-        title={title}
-        description={description}
-    />
+<div class="astro-social-share">
+    {buttons.map((Button) => <Button url={url} description={description} via={via} title={title} />)}
 </div>

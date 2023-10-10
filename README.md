@@ -33,23 +33,26 @@ import { SocialShare } from "astro-social-share";
 />
 ```
 
-You can also import individual buttons
+If you'd like to customize the share bar you can import the invidual buttons and pass them into the `<SocialShare />` component.
 
-```js
+```astro
+---
 import { 
   FacebookShareButton,
   HackerNewsShareButton,
   LinkedInShareButton,
   RedditShareButton,
-  TwitterShareButton
+  TwitterShareButton,
+  SocialShare
 } from "astro-social-share";
 
-<TwitterShareButton 
+const BUTTONS = [TwitterShareButton, FacebookShareButton]
+---
+
+<SocialShare
+    buttons={BUTTONS}
     description="Description of the page/post"
     via="YourTwitterAccount"
+    title="Page Title"
 />
-<FacebookShareButton />
-<HackerNewsShareButton title={title}/>
-<FacebookShareButton />
-<RedditShareButton title={title} />
 ```
