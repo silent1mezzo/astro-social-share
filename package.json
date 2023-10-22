@@ -1,7 +1,7 @@
 {
   "name": "astro-social-share",
   "description": "Social media share buttons for your Astro site",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "type": "module",
   "homepage": "https://github.com/silent1mezzo/astro-social-share#readme",
   "exports": {
@@ -27,7 +27,7 @@
   ],
   "license": "MIT",
   "scripts": {
-    "postpublish" : "PACKAGE_VERSION=$(cat package.json | grep \\\"version\\\" | head -1 | awk -F: '{ print $2 }' | sed 's/[\",]//g' | tr -d '[[:space:]]') && git tag v$PACKAGE_VERSION && git push --tags",
+    "postpublish" : "PACKAGE_VERSION=$(cat package.json | grep \\\"version\\\" | head -1 | awk -F: '{ print $2 }' | sed 's/[\",]//g' | tr -d '[[:space:]]') && git tag v$PACKAGE_VERSION && git push --tags"
   },
   "devDependencies": {
     "astro": "^3.2.3"
