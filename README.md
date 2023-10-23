@@ -1,6 +1,8 @@
 # Astro Social Share
 
-Social media share buttons for your Astro site
+Social media share buttons for your Astro site 
+
+![npm](https://img.shields.io/npm/v/astro-social-share)
 
 ## Features
 * No dependencies or external scrips
