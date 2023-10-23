@@ -3,17 +3,17 @@
 Social media share buttons for your Astro site
 
 ## Features
-* No dependencies, external scrips
+* No dependencies or external scrips
 * Share buttons for:
   * Facebook
   * Hacker News
   * LinkedIn
   * Reddit
   * Twitter
-* Icons included
+* Icons included from https://simpleicons.org/
 
 ## Demo
-[Demo site](https://mckerlie.com/posts/migrating-your-blog-from-hugo-to-astro)
+[Example](https://mckerlie.com/posts/migrating-your-blog-from-hugo-to-astro)
 
 ## Install
 
