@@ -58,3 +58,30 @@ const BUTTONS = [TwitterShareButton, FacebookShareButton]
     title="Page Title"
 />
 ```
+
+## Using your own icons
+
+If you'd like to pass in your own icons you can do so through the individual components.
+
+```astro
+---
+import { 
+  FacebookShareButton,
+  TwitterShareButton,
+} from "astro-social-share";
+
+---
+
+<FacebookShareButton>
+  <svg>...</svg>
+</FacebookShareButton>
+
+<TwitterShareButton
+    description="Description of the page/post"
+    via="YourTwitterAccount"
+    title="Page Title"
+>
+  <img ... />
+</TwitterShareButton>
+```
+
