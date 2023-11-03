@@ -15,7 +15,7 @@ Social media share buttons for your Astro site
 * Icons included from https://simpleicons.org/
 
 ## Demo
-[Example](https://mckerlie.com/posts/migrating-your-blog-from-hugo-to-astro)
+[Example](https://mckerlie.com/posts/improving-the-sharing-experience-in-astro)
 
 ## Install
 
