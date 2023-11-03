@@ -5,7 +5,7 @@ Social media share buttons for your Astro site
 ![npm](https://img.shields.io/npm/v/astro-social-share)
 
 ## Features
-* No dependencies or external scrips
+* No dependencies or external scripts
 * Share buttons for:
   * Facebook
   * Hacker News
@@ -35,7 +35,7 @@ import { SocialShare } from "astro-social-share";
 />
 ```
 
-If you'd like to customize the share bar you can import the invidual buttons and pass them into the `<SocialShare />` component.
+If you'd like to customize the share bar you can import the individual buttons and pass them into the `<SocialShare />` component.
 
 ```astro
 ---
