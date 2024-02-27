@@ -12,6 +12,7 @@ Social media share buttons for your Astro site
   * LinkedIn
   * Reddit
   * Twitter
+  * WhatsApp
 * Icons included from https://simpleicons.org/
 
 ## Demo
@@ -45,6 +46,7 @@ import {
   LinkedInShareButton,
   RedditShareButton,
   TwitterShareButton,
+  WhatsAppShareButton,
   SocialShare
 } from "astro-social-share";
 
