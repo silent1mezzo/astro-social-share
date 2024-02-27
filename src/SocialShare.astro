@@ -5,13 +5,14 @@ import HackerNewsShareButton from "./HackerNews.astro";
 import LinkedInShareButton from "./LinkedIn.astro";
 import RedditShareButton from "./Reddit.astro";
 import TwitterShareButton from './Twitter.astro';
+import WhatsAppShareButton from './WhatsApp.astro';
 import type ButtonProps  from './types';
 
 interface Props extends ButtonProps {
   buttons?: Object[];
 }
 
-const DEFAULT_COMPONENTS = [TwitterShareButton, FacebookShareButton, HackerNewsShareButton, LinkedInShareButton, RedditShareButton, EmailShareButton];
+const DEFAULT_COMPONENTS = [TwitterShareButton, FacebookShareButton, HackerNewsShareButton, LinkedInShareButton, RedditShareButton, EmailShareButton, WhatsAppShareButton];
 
 const { buttons=DEFAULT_COMPONENTS, url=Astro.request.url, title, description, via} = Astro.props;
 
