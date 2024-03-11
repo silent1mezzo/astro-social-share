@@ -3,7 +3,7 @@ import type ButtonProps from "./types";
 
 type Props = ButtonProps;
 
-const { url = Astro.request.url, description, via } = Astro.props;
+const { url=Astro.request.url, description} = Astro.props;
 
 let URL = `whatsapp://send?text=`;
 
