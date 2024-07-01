@@ -8,11 +8,6 @@ const { url=Astro.request.url} = Astro.props;
 let URL = `https://www.linkedin.com/sharing/share-offsite/?url=${url}`
 
 ---
-<style>
-  a {
-    margin-right: 10px;
-  }
-</style>
 <a class="social-share-btn" target="_blank" href={URL} rel="noopener noreferrer">
   <slot>
     <style>

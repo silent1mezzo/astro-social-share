@@ -8,11 +8,6 @@ const { url=Astro.request.url, title } = Astro.props;
 let URL = `http://news.ycombinator.com/submitlink?u=${url}&t=${title}`
 
 ---
-<style>
-  a {
-    margin-right: 10px;
-  }
-</style>
 <a class="social-share-btn" target="_blank" href={URL} rel="noopener noreferrer">
   <slot>
     <style>

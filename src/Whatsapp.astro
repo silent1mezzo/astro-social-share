@@ -2,8 +2,7 @@
 import type ButtonProps from "./types";
 
 type Props = ButtonProps;
-
-const { url=Astro.request.url, description} = Astro.props;
+const { url=Astro.request.url, description, style} = Astro.props;
 
 let URL = `whatsapp://send?text=`;
 
@@ -11,11 +10,6 @@ if (description) URL += `${description} `;
 URL += `${url}`;
 ---
 
-<style>
-  a {
-    margin-right: 10px;
-  }
-</style>
 <a
   class="social-share-btn"
   target="_blank"

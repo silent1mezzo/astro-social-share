@@ -9,11 +9,6 @@ const encoded_url = encodeURIComponent(url);
 let URL = `https://www.reddit.com/submit?url=${encoded_url}&title=${title}`
 
 ---
-<style>
-  a {
-    margin-right: 10px;
-  }
-</style>
 <a class="social-share-btn" target="_blank" href={URL} rel="noopener noreferrer">
   <slot>
     <style>

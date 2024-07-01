@@ -17,11 +17,21 @@ const DEFAULT_COMPONENTS = [TwitterShareButton, FacebookShareButton, HackerNewsS
 const { buttons=DEFAULT_COMPONENTS, url=Astro.request.url, title, description, via} = Astro.props;
 
 ---
-<style>
-    div {
-        margin: 20px 0px;
-    }
-</style>
+<slot name='astro-social-share-css'>
+    <style is:global>
+        .astro-social-share {
+            margin: 20px 0px;
+            height: 24px;
+        } 
+        .astro-social-share a {
+            text-decoration: none;
+            margin-right: 10px;
+        }
+        .astro-social-share svg {
+            height: 24px;
+        }
+    </style>
+</slot>
 <div class="astro-social-share">
     {buttons.map((Button) => <Button url={url} description={description} via={via} title={title} />)}
 </div>

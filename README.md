@@ -87,3 +87,30 @@ import {
 </TwitterShareButton>
 ```
 
+## Using your own CSS
+
+If you'd like to style the share bar and icons you can pass in a global <style> component to a slot named `astro-social-share-css`
+
+```astro
+<SocialShare
+    description="Description of the page/post"
+    via="YourTwitterAccount"
+    title="Page Title"
+>
+<slot name="astro-social-share-css">
+  <style is:global>
+    .astro-social-share {
+        margin: 20px 0px;
+        height: 24px;
+    }
+    .astro-social-share a {
+        text-decoration: none;
+        margin-right: 10px;
+    }
+    .astro-social-share svg {
+        height: 24px;
+    }
+  </style>
+</slot>
+```
+

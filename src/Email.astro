@@ -4,15 +4,9 @@ import type ButtonProps  from './types';
 type Props = ButtonProps;
 
 const { url=Astro.request.url, title, description} = Astro.props;
-
 let URL = `mailto:?subject=${title}&body=${description}%0A${url}`
 
 ---
-<style>
-  a {
-    margin-right: 10px;
-  }
-</style>
 <a class="social-share-btn" target="_blank" href={URL} rel="noopener noreferrer">
   <slot>
     <style>
