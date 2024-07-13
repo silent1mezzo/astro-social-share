@@ -4,7 +4,7 @@ Social media share buttons for your Astro site
 
 ![npm](https://img.shields.io/npm/v/astro-social-share)
 
-## Features
+## ⭐ Features
 * ✅ Zero dependencies
 * ✅ Fully customizable
 * ✅ Share buttons for:
@@ -34,7 +34,7 @@ pnpm add astro-social-share
 
 Please visit the [documentation](https://astro-social-share.mckerlie.com) for advanced usage.
 
-## Usage
+## ⚡ Usage
 
 ```astro
 ---
