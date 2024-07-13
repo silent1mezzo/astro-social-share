@@ -5,33 +5,49 @@ Social media share buttons for your Astro site
 ![npm](https://img.shields.io/npm/v/astro-social-share)
 
 ## Features
-* No dependencies or external scripts
-* Share buttons for:
+* ✅ Zero dependencies
+* ✅ Fully customizable
+* ✅ Share buttons for:
   * Facebook
   * Hacker News
   * LinkedIn
   * Reddit
   * Twitter
   * WhatsApp
-* Icons included from https://simpleicons.org/
+* ✅ Small size
+* ✅ Included icons from https://simpleicons.org/
 
 ## Demo
 [Example](https://mckerlie.com/posts/improving-the-sharing-experience-in-astro)
 
-## Install
+## 📦 Installation
 
-`npm i astro-social-share`
+```bash
+# Uisng NPM
+npm install astro-social-share
+
+# Using Yarn
+yarn add astro-social-share
+
+# Using PNPM
+pnpm add astro-social-share
+```
+
+## 📖 Documentation
+
+Please visit the [documentation](https://astro-social-share.mckerlie.com) for advanced usage.
 
 ## Usage
 
 Simple, include all links
 
-```js
+```astro
+---
 import { SocialShare } from "astro-social-share";
+---
 
 <SocialShare
     description="Description of the page/post"
-    via="YourTwitterAccount"
     title="Page Title"
 />
 ```
@@ -56,7 +72,6 @@ const BUTTONS = [TwitterShareButton, FacebookShareButton]
 <SocialShare
     buttons={BUTTONS}
     description="Description of the page/post"
-    via="YourTwitterAccount"
     title="Page Title"
 />
 ```
