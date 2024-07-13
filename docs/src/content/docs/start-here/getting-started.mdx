@@ -1,0 +1,45 @@
+---
+title: "Installation"
+description: "How to install Astro Social Share"
+---
+
+import { Tabs, TabItem } from "@astrojs/starlight/components";
+
+## Install
+
+<Tabs>
+  <TabItem label="npm">
+    ```bash
+      # Using NPM
+      npm install astro-social-share
+    ```
+
+  </TabItem>
+  <TabItem label="pnpm">
+    ```bash
+      # Using PNPM
+      pnpm add astro-social-share
+    ```
+
+  </TabItem>
+  <TabItem label="yarn">
+    ```bash
+      # Using Yarn
+      yarn add astro-social-share
+    ```
+  </TabItem>
+</Tabs>
+
+## Usage
+
+```astro
+---
+import { SocialShare } from "astro-social-share";
+
+---
+
+<SocialShare
+    description="Description of the page/post"
+    title="Page Title"
+/>
+```
