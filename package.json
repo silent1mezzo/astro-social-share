@@ -23,7 +23,8 @@
     "astro-integration",
     "social-media",
     "social-share",
-    "share"
+    "share",
+    "icons"
   ],
   "license": "MIT",
   "scripts": {
