@@ -4,7 +4,7 @@ import EmailShareButton from "../src/Email.astro";
 import FacebookShareButton from '../src/Facebook.astro';
 import HackerNewsShareButton from '../src/HackerNews.astro';
 import LinkedInShareButton from '../src/LinkedIn.astro';
-import TwitterShareButton from '../src/X.astro';
+import TwitterShareButton from '../src/Twitter.astro';
 import WhatsAppShareButton from '../src/Whatsapp.astro';    
 
 const BUTTONS = [
