@@ -4,7 +4,7 @@ import EmailShareButton from "../src/Email.astro";
 import FacebookShareButton from '../src/Facebook.astro';
 import HackerNewsShareButton from '../src/HackerNews.astro';
 import LinkedInShareButton from '../src/LinkedIn.astro';
-import XShareButton from '../src/X.astro';
+import TwitterShareButton from '../src/X.astro';
 import WhatsAppShareButton from '../src/Whatsapp.astro';    
 
 const BUTTONS = [
@@ -46,7 +46,7 @@ const BUTTONS = [
         expected: 'href="https://www.linkedin.com/sharing/share-offsite/?url=https://example.com"'
     },
     {
-        obj: XShareButton,
+        obj: TwitterShareButton,
         props: {
             url: 'https://example.com',
             title: 'Example Subject',

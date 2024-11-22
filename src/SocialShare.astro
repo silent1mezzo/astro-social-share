@@ -4,7 +4,7 @@ import FacebookShareButton from "./Facebook.astro";
 import HackerNewsShareButton from "./HackerNews.astro";
 import LinkedInShareButton from "./LinkedIn.astro";
 import RedditShareButton from "./Reddit.astro";
-import XShareButton from './X.astro';
+import TwitterShareButton from './X.astro';
 import WhatsAppShareButton from './Whatsapp.astro';
 import type ButtonProps  from './types';
 
@@ -12,7 +12,7 @@ interface Props extends ButtonProps {
   buttons?: Object[];
 }
 
-const DEFAULT_COMPONENTS = [XShareButton, FacebookShareButton, HackerNewsShareButton, LinkedInShareButton, RedditShareButton, EmailShareButton, WhatsAppShareButton];
+const DEFAULT_COMPONENTS = [TwitterShareButton, FacebookShareButton, HackerNewsShareButton, LinkedInShareButton, RedditShareButton, EmailShareButton, WhatsAppShareButton];
 
 const { buttons=DEFAULT_COMPONENTS, url=Astro.request.url, title, description, via} = Astro.props;
 

@@ -25,12 +25,12 @@ import {
   HackerNewsShareButton,
   LinkedInShareButton,
   RedditShareButton,
-  XShareButton,
+  TwitterShareButton,
   WhatsAppShareButton,
   SocialShare
 } from "astro-social-share";
 
-const BUTTONS = [XShareButton, FacebookShareButton]
+const BUTTONS = [TwitterShareButton, FacebookShareButton]
 ---
 
 <SocialShare
@@ -48,7 +48,7 @@ If you'd like to pass in your own icons you can do so through the individual com
 ---
 import { 
   FacebookShareButton,
-  XShareButton,
+  TwitterShareButton,
 } from "astro-social-share";
 
 ---
@@ -57,13 +57,13 @@ import {
   <svg>...</svg>
 </FacebookShareButton>
 
-<XShareButton
+<TwitterShareButton
     description="Description of the page/post"
     via="YourXAccount"
     title="Page Title"
 >
   <img ... />
-</XShareButton>
+</TwitterShareButton>
 ```
 
 ## Using your own CSS
