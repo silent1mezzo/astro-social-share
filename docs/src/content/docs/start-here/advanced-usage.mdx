@@ -25,12 +25,12 @@ import {
   HackerNewsShareButton,
   LinkedInShareButton,
   RedditShareButton,
-  TwitterShareButton,
+  XShareButton,
   WhatsAppShareButton,
   SocialShare
 } from "astro-social-share";
 
-const BUTTONS = [TwitterShareButton, FacebookShareButton]
+const BUTTONS = [XShareButton, FacebookShareButton]
 ---
 
 <SocialShare
@@ -48,7 +48,7 @@ If you'd like to pass in your own icons you can do so through the individual com
 ---
 import { 
   FacebookShareButton,
-  TwitterShareButton,
+  XShareButton,
 } from "astro-social-share";
 
 ---
@@ -57,13 +57,13 @@ import {
   <svg>...</svg>
 </FacebookShareButton>
 
-<TwitterShareButton
+<XShareButton
     description="Description of the page/post"
-    via="YourTwitterAccount"
+    via="YourXAccount"
     title="Page Title"
 >
   <img ... />
-</TwitterShareButton>
+</XShareButton>
 ```
 
 ## Using your own CSS
@@ -73,7 +73,7 @@ If you'd like to style the share bar and icons you can pass in a global `<style>
 ```astro
 <SocialShare
     description="Description of the page/post"
-    via="YourTwitterAccount"
+    via="YourXAccount"
     title="Page Title"
 >
 <slot name="astro-social-share-css">

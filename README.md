@@ -12,7 +12,7 @@ Social media share buttons for your Astro site
   * Hacker News
   * LinkedIn
   * Reddit
-  * Twitter
+  * X
   * WhatsApp
 * ✅ Small size
 * ✅ Included icons from https://simpleicons.org/

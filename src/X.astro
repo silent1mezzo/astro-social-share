@@ -5,7 +5,7 @@ type Props = ButtonProps;
 
 const { url=Astro.request.url, description, via} = Astro.props;
 
-let URL = `https://twitter.com/intent/tweet?url=${url}`
+let URL = `https://x.com/intent/tweet?url=${url}`
 
 if (description) URL += `&text=${description}`
 if (via) URL += `&via=${via}`
