@@ -52,7 +52,7 @@ const BUTTONS = [
             title: 'Example Subject',
             description: 'Example Description'
         },
-        expected: 'href="https://twitter.com/intent/tweet?url=https://example.com&text=Example Description"'
+        expected: 'href="https://x.com/intent/tweet?url=https://example.com&text=Example Description"'
     },
     {
         obj: WhatsAppShareButton,
