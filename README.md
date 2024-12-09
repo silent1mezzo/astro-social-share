@@ -14,6 +14,7 @@ Social media share buttons for your Astro site
   * Reddit
   * X
   * WhatsApp
+  * Medium
 * ✅ Small size
 * ✅ Included icons from https://simpleicons.org/
 

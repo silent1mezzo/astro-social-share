@@ -5,7 +5,8 @@ type Props = ButtonProps;
 
 const { url = Astro.request.url, title } = Astro.props;
 
-let URL = `https://medium.com/new-story?url=${encodeURIComponent(url)}&title=${title}`;
+let URL = `https://medium.com/new-story?url=${encodeURIComponent(url)}&title=${title}`
+
 ---
 <a class="social-share-btn" target="_blank" href={URL} rel="noopener noreferrer">
   <slot>
