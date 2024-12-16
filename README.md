@@ -15,6 +15,7 @@ Social media share buttons for your Astro site
   * X
   * WhatsApp
   * Medium
+  * YouTube
 * ✅ Small size
 * ✅ Included icons from https://simpleicons.org/
 
