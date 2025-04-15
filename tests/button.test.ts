@@ -81,7 +81,7 @@ const BUTTONS = [
             title: 'Example Subject',
             description: 'Example Description'
         },
-        expected: 'href="https://bsky.app/intent/compose?text=Example%20Subjecthttps%3A%2F%2Fexample.com"'
+        expected: 'href="https://bsky.app/intent/compose?text=Example%20Subject https%3A%2F%2Fexample.com"'
     }
 ]
 
