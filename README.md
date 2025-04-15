@@ -16,6 +16,7 @@ Social media share buttons for your Astro site
   * Threads
   * WhatsApp
   * Medium
+  * Threads
   * Bluesky
 * ✅ Small size
 * ✅ Included icons from https://simpleicons.org/
