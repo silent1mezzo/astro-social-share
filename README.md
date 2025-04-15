@@ -13,6 +13,7 @@ Social media share buttons for your Astro site
   * LinkedIn
   * Reddit
   * X
+  * Threads
   * WhatsApp
   * Medium
   * Bluesky
