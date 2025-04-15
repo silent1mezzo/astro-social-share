@@ -16,13 +16,14 @@ Social media share buttons for your Astro site
   * Threads
   * WhatsApp
   * Medium
+  * Bluesky
 * ✅ Small size
 * ✅ Included icons from https://simpleicons.org/
 
 ## 📦 Installation
 
 ```bash
-# Uisng NPM
+# Using NPM
 npm install astro-social-share
 
 # Using Yarn

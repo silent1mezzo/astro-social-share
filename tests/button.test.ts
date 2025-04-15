@@ -1,5 +1,6 @@
 import { experimental_AstroContainer as AstroContainer } from 'astro/container';
 import { expect, test } from 'vitest';
+import BlueskyShareButton from '../src/Bluesky.astro';
 import EmailShareButton from "../src/Email.astro";
 import FacebookShareButton from '../src/Facebook.astro';
 import HackerNewsShareButton from '../src/HackerNews.astro';
@@ -72,6 +73,15 @@ const BUTTONS = [
             description: 'Example Description'
         },
         expected: 'href="whatsapp://send?text=Example%20Description%20https://example.com"'
+    },
+    {
+        obj: BlueskyShareButton,
+        props: {
+            url: 'https://example.com',
+            title: 'Example Subject',
+            description: 'Example Description'
+        },
+        expected: 'href="https://bsky.app/intent/compose?text=Example%20Subjecthttps%3A%2F%2Fexample.com"'
     }
 ]
 

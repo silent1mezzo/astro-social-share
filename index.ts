@@ -8,3 +8,4 @@ export { default as TwitterShareButton } from './src/Twitter.astro';
 export { default as WhatsAppShareButton } from './src/Whatsapp.astro';
 export { default as MediumShareButton } from './src/Medium.astro';
 export { default as SocialShare } from './src/SocialShare.astro';
+export { default as BlueskyShareButton } from './src/Bluesky.astro';

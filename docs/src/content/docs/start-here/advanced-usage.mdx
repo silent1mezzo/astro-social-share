@@ -29,10 +29,11 @@ import {
   ThreadsShareButton,
   TwitterShareButton,
   WhatsAppShareButton,
+  BlueskyShareButton,
   SocialShare
 } from "astro-social-share";
 
-const BUTTONS = [TwitterShareButton, FacebookShareButton]
+const BUTTONS = [TwitterShareButton, FacebookShareButton, BlueskyShareButton]
 ---
 
 <SocialShare
@@ -51,6 +52,7 @@ If you'd like to pass in your own icons you can do so through the individual com
 import { 
   FacebookShareButton,
   TwitterShareButton,
+  BlueskyShareButton,
 } from "astro-social-share";
 
 ---

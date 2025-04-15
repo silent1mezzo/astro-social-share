@@ -15,8 +15,8 @@ test('Basic Share Bar', async () => {
     });
     expect(result).toContain('class="astro-social-share"');
 
-    // Currently there's 6 buttons, splitting on this gives us 8 parts.
-    expect(result.split('social-share-btn').length).toBe(8);
+    // Currently there's 6 buttons, splitting on this gives us 10 parts.
+    expect(result.split('social-share-btn').length).toBe(10);
 });
 
 test('Custom Share Bar', async () => {
