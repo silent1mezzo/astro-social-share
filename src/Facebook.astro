@@ -8,7 +8,7 @@ const { url=Astro.request.url} = Astro.props;
 let URL = `https://www.facebook.com/sharer/sharer.php?u=${url}`
 
 ---
-<a class="social-share-btn" target="_blank" href={URL} rel="noopener noreferrer">
+<a class="social-share-btn" target="_blank" href={URL} rel="noopener noreferrer nofollow">
   <slot>
     <style>
       svg:hover {

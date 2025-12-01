@@ -8,7 +8,7 @@ const { url=Astro.request.url, title } = Astro.props;
 let URL = `http://news.ycombinator.com/submitlink?u=${url}&t=${title}`
 
 ---
-<a class="social-share-btn" target="_blank" href={URL} rel="noopener noreferrer">
+<a class="social-share-btn" target="_blank" href={URL} rel="noopener noreferrer nofollow">
   <slot>
     <style>
       svg:hover {

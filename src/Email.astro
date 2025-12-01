@@ -7,7 +7,7 @@ const { url=Astro.request.url, title, description} = Astro.props;
 let URL = `mailto:?subject=${title}&body=${description}%0A${url}`
 
 ---
-<a class="social-share-btn" target="_blank" href={URL} rel="noopener noreferrer">
+<a class="social-share-btn" target="_blank" href={URL} rel="noopener noreferrer nofollow">
   <slot>
     <style>
       svg:hover {

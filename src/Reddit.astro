@@ -9,7 +9,7 @@ const encoded_url = encodeURIComponent(url);
 let URL = `https://www.reddit.com/submit?url=${encoded_url}&title=${title}`
 
 ---
-<a class="social-share-btn" target="_blank" href={URL} rel="noopener noreferrer">
+<a class="social-share-btn" target="_blank" href={URL} rel="noopener noreferrer nofollow">
   <slot>
     <style>
       svg:hover {
